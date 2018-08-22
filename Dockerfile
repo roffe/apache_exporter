@@ -1,4 +1,4 @@
-FROM golang:1.10-alpine as build
+FROM golang:1.10-alpine3.8 as build
 RUN apk add --no-cache git \
     && go get -u -v github.com/Lusitaniae/apache_exporter
 
